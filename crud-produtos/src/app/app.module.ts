@@ -6,11 +6,29 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
+import { HomeComponent } from './cursos/home/home.component';
+import { environment } from "../environments/environment";
+import { initializeApp } from 'firebase/app';
+import { AngularFireStorage } from "@angular/fire/compat/storage";
+import {MatTableModule} from "@angular/material/table";
+import { CursosFormComponent } from './cursos/cursos-form/cursos-form.component';
+import { CursosComponent } from './cursos/cursos/cursos.component';
+import {MatCardModule} from "@angular/material/card";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    CursosFormComponent,
+    CursosComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -18,9 +36,19 @@ import {MatButtonModule} from "@angular/material/button";
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
-export class AppModule { }
+export class AppModule {
+
+}

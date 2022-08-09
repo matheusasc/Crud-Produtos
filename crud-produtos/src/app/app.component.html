@@ -1,39 +1,32 @@
-<nav class="navbar bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-    </mat-toolbar>
+    <span style="color: white">MA Cursos</span>
+  </mat-toolbar>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
 </nav>
 
-<ul class="list-group">
-  <li class="list-group-item active" aria-current="true">An active item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-
-<!--<p>-->
-<!--  <mat-toolbar color="primary">-->
-<!--    <mat-toolbar-row>-->
-<!--      <span>My App</span>-->
-<!--      <span class="example-spacer"></span>-->
-<!--      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" style="margin-left: 47cm">-->
-<!--        <mat-icon>menu</mat-icon>-->
-<!--      </button>-->
-<!--    </mat-toolbar-row>-->
-
-<!--    <mat-toolbar-row>-->
-<!--      <span>Second Line</span>-->
-<!--      <span class="example-spacer"></span>-->
-<!--      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" style="margin-left: 45cm">-->
-<!--        <mat-icon>favorite</mat-icon>-->
-<!--      </button>-->
-<!--      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" >-->
-<!--        <mat-icon>share</mat-icon>-->
-<!--      </button>-->
-<!--    </mat-toolbar-row>-->
-<!--  </mat-toolbar>-->
-<!--</p>-->
+<app-home></app-home>
+<router-outlet></router-outlet>

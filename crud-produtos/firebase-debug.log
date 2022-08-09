@@ -1,0 +1,136 @@
+[debug] [2022-08-09T14:27:32.013Z] ----------------------------------------------------------------------
+[debug] [2022-08-09T14:27:32.014Z] Command:       /home/dti-dev-02/.nvm/versions/node/v14.18.3/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-08-09T14:27:32.014Z] CLI Version:   11.0.1
+[debug] [2022-08-09T14:27:32.015Z] Platform:      linux
+[debug] [2022-08-09T14:27:32.015Z] Node Version:  v14.18.3
+[debug] [2022-08-09T14:27:32.015Z] Time:          Tue Aug 09 2022 10:27:32 GMT-0400 (Horário Padrão do Amazonas)
+[debug] [2022-08-09T14:27:32.015Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-09T14:27:32.061Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-09T14:27:32.061Z] > authorizing via signed-in user (matheusassuncao994@gmail.com)
+[debug] [2022-08-09T14:27:32.122Z] openjdk version "11.0.15" 2022-04-19
+
+[debug] [2022-08-09T14:27:32.123Z] OpenJDK Runtime Environment (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1, mixed mode, sharing)
+
+[debug] [2022-08-09T14:27:32.125Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: functions, firestore, database, hosting, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, database, hosting, storage"}}
+[debug] [2022-08-09T14:27:32.144Z] [hub] writing locator at /tmp/hub-crud-97943.json
+[warn] ⚠  hosting: The hosting emulator is configured but there is no hosting configuration. Have you run firebase init hosting? {"metadata":{"emulator":{"name":"hosting"},"message":"The hosting emulator is configured but there is no hosting configuration. Have you run \u001b[1mfirebase init hosting\u001b[22m?"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, hosting, pubsub\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-08-09T14:27:32.158Z] defaultcredentials: writing to file /home/dti-dev-02/.config/firebase/matheusassuncao994_gmail_com_application_default_credentials.json
+[debug] [2022-08-09T14:27:32.160Z] Setting GAC to /home/dti-dev-02/.config/firebase/matheusassuncao994_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/dti-dev-02/.config/firebase/matheusassuncao994_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-09T14:27:32.162Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crud-97943/adminSdkConfig [none]
+[debug] [2022-08-09T14:27:33.211Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crud-97943/adminSdkConfig 200
+[debug] [2022-08-09T14:27:33.211Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crud-97943/adminSdkConfig {"projectId":"crud-97943","storageBucket":"crud-97943.appspot.com","locationId":"us-central"}
+[debug] [2022-08-09T14:27:33.275Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-09T14:27:33.276Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-09T14:27:33.276Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/dti-dev-02/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--rules","/home/dti-dev-02/crud/crud-produtos/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/dti-dev-02/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"/home/dti-dev-02/crud/crud-produtos/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-08-09T14:27:34.005Z] Aug 09, 2022 10:27:33 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:35861
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Aug 09, 2022 10:27:33 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:35861\n"}}
+[debug] [2022-08-09T14:27:34.045Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-08-09T14:27:34.046Z] localhost:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8080\n\nDev App Server is now running.\n\n"}}
+[debug] [2022-08-09T14:27:34.300Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crud-97943 [none]
+[debug] [2022-08-09T14:27:35.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crud-97943 200
+[debug] [2022-08-09T14:27:35.369Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crud-97943 {"projectId":"crud-97943","projectNumber":"980130278133","displayName":"crud","name":"projects/crud-97943","resources":{"hostingSite":"crud-97943","storageBucket":"crud-97943.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_773d3d61-b20a-438e-b3ec-ea7d08bc3a7a"}
+[debug] [2022-08-09T14:27:35.370Z] database rules config:  []
+[warn] ⚠  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2022-08-09T14:27:35.373Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-09T14:27:35.373Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-09T14:27:35.374Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-08-09T14:27:35.374Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/dti-dev-02/.cache/firebase/emulators/firebase-database-emulator-v4.8.0.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/dti-dev-02/.cache/firebase/emulators/firebase-database-emulator-v4.8.0.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-08-09T14:27:35.868Z] WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/dti-dev-02/.cache/firebase/emulators/firebase-database-emulator-v4.8.0.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+ {"metadata":{"emulator":{"name":"database"},"message":"WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/home/dti-dev-02/.cache/firebase/emulators/firebase-database-emulator-v4.8.0.jar) to field sun.nio.ch.SelectorImpl.selectedKeys\nWARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n"}}
+[debug] [2022-08-09T14:27:36.377Z] 10:27:36.376 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"10:27:36.376 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-08-09T14:27:36.513Z] 10:27:36.513 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"10:27:36.513 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2022-08-09T14:27:36.641Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-09T14:27:37.268Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[warn] ⚠  hosting: The hosting emulator is configured but there is no hosting configuration. Have you run firebase init hosting? {"metadata":{"emulator":{"name":"hosting"},"message":"The hosting emulator is configured but there is no hosting configuration. Have you run \u001b[1mfirebase init hosting\u001b[22m?"}}
+[debug] [2022-08-09T14:27:37.276Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-09T14:27:37.276Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-09T14:27:37.276Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","/home/dti-dev-02/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"/home/dti-dev-02/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-09T14:27:37.355Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/home/dti-dev-02/crud/crud-produtos/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/dti-dev-02/crud/crud-produtos/functions\" for Cloud Functions..."}}
+[debug] [2022-08-09T14:27:37.544Z] Validating nodejs source
+[debug] [2022-08-09T14:27:39.323Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-09T14:27:39.323Z] Building nodejs source
+[debug] [2022-08-09T14:27:39.323Z] Analyzing nodejs backend spec
+[debug] [2022-08-09T14:27:39.325Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-09T14:27:39.428Z] Serving at port 9005
+
+[debug] [2022-08-09T14:27:39.460Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-09T14:27:39.464Z] shutdown requested via /__/quitquitquit
+
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬──────────────────────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port                        │ View in Emulator UI             │
+├───────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001                   │ http://localhost:4000/functions │
+├───────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Firestore │ localhost:8080                   │ http://localhost:4000/firestore │
+├───────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Database  │ localhost:9000                   │ http://localhost:4000/database  │
+├───────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Hosting   │ Failed to initialize (see above) │                                 │
+├───────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Storage   │ localhost:9199                   │ http://localhost:4000/storage   │
+└───────────┴──────────────────────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
