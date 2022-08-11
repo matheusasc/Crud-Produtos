@@ -2,7 +2,7 @@ import {Component, OnInit, EventEmitter, Input, Output, NgModule} from '@angular
 import {Course} from "../curso-interface";
 
 @Component({
-  selector: 'app-course',
+  selector: 'app-courses',
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.scss']
 })
