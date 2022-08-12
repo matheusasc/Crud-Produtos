@@ -25,7 +25,6 @@ export class CoursesComponent implements OnInit {
     public dialog: MatDialog,
     private router: Router,
     private route: ActivatedRoute
-
     ) {
     // this.coursesService = new CoursesService();
     this.courses$ = this.coursesService.list()
@@ -45,17 +44,18 @@ export class CoursesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
   }
+
   onAdd() {
-    this.router.navigate(['new']);
+    this.router.navigate(['new'], {relativeTo: this.route});
   }
 
   onEdit(course: Course) {
     // this.router.navigate(course);
   }
+  }
 
 
 
-}
+
 

@@ -11,7 +11,7 @@ import { ErrorDialogComponent } from './shared/components/error-dialog/error-dia
 import {MaterialAngularModule} from "./shared/material-angular.module";
 import { CategoryPipe } from './shared/pipes/category.pipe';
 import {SharedModule} from "./shared/shared.module";
-import { CourseFormComponent } from './courses/course-form/course-form.component';
+import { CourseFormComponent } from './cursos/course-form/course-form.component';
 
 
 
