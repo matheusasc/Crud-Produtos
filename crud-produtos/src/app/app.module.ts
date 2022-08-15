@@ -12,6 +12,7 @@ import {MaterialAngularModule} from "./shared/material-angular.module";
 import { CategoryPipe } from './shared/pipes/category.pipe';
 import {SharedModule} from "./shared/shared.module";
 import { CourseFormComponent } from './cursos/course-form/course-form.component';
+import { NewCourseComponent } from './cursos/new-course/new-course.component';
 
 
 
@@ -20,6 +21,7 @@ import { CourseFormComponent } from './cursos/course-form/course-form.component'
     AppComponent,
     CoursesComponent,
     CourseFormComponent,
+    NewCourseComponent,
   ],
   imports: [
     BrowserModule,
